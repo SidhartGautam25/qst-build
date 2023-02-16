@@ -1,32 +1,9 @@
 import React, { useState } from "react";
 
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
-import "./navbar.css";
+import "./navbarvc.css";
 import { Link } from "react-router-dom";
-
-const Menu = () => {
-  return (
-    <>
-      <p>
-        <a href="#home">Home</a>
-      </p>
-      <p>
-        <a href="#wgpt3">What is QStack?</a>
-      </p>
-      <p>
-        <a href="#possibility">Ask a Question</a>
-      </p>
-      <p>
-        <a href="#features">Case Studies</a>
-      </p>
-      <p>
-        <a href="#blog">Library</a>
-      </p>
-    </>
-  );
-};
-
-const Navbar = () => {
+const Navbarvc = () => {
   const [color, setColor] = useState(false);
   const changeColor = () => {
     if (window.scrollY >= 90) {
@@ -45,9 +22,7 @@ const Navbar = () => {
             <p>QStack</p>
           </Link>
         </div>
-        <div className="gpt3__navbar-links_container">
-          <Menu />
-        </div>
+        <div className="gpt3__navbar-links_container">{/* <Menu /> */}</div>
       </div>
       <div className="gpt3__navbar-sign">
         <Link to="/login">
@@ -74,7 +49,7 @@ const Navbar = () => {
         {toggleMenu && (
           <div className="gpt3__navbar-menu_container scale-up-center">
             <div className="gpt3__navbar-menu_container-links">
-              <Menu />
+              {/* <Menu /> */}
               <div className="gpt3__navbar-menu_container-links-sign">
                 <button type="button"> Sign up</button>
               </div>
@@ -86,4 +61,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Navbarvc;

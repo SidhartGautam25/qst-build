@@ -1,27 +1,25 @@
 :root {
-    --bg-color: #f5f5f5;
-    --bg-round-a: #4481eb;
-    --bg-round-b: #04befe;
-    --panel-color: #fff;
-    --title: #444;
-    --bg-input: #e0e0e0;
-    --input-icon: #8a8a8a;
-    --input: #333;
-    --input-hover: #222;
-    --btn-color: #5995fd;
-    --btn-text: #fff;
-    --btn-hover: #4d84e2;
-    --social-text: #444;
-    --social-icon: #4481eb;
-    --icon-color: #333;
-    --check-text: #333;
-    --check-hover: #333;
-    --check-link: #4d84e2;
-    --pass-color: #444;
-    --key-color: #777;
-    --pass-hover-color: #4d84e2;
-    --keyboard-color: #e0e0e0;
-    --key-letter: #333;
+  --bg-color: #040C18;
+  --bg-round-a: #031B34;
+  --bg-round-b: #040C18;
+  --panel-color: #fff;
+  --title: #f2f2f2;
+  --bg-input: #27333e;
+  --input-icon: #ccc;
+  --input: #ccc;
+  --input-hover: #aaa;
+  --btn-color: #da4726;
+  --btn-text: #f2f2f2;
+  --btn-hover: #FF8A71;
+  --social-text: #ccc;
+  --social-icon: #fff;
+  --icon-color: #aaa;
+  --check-text: #fff;
+  --check-hover: #fff;
+  --check-link: #5995fd;
+  --pass-color: #fff;
+  --pass-hover-color: #5995fd;
+  
   }
   
   :root[data-theme="dark"] {
@@ -55,6 +53,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: #fff;
   }
   
   .container {
@@ -117,7 +116,7 @@
   
   form.sign-up-form {
     z-index: 1;
-    opacity: 0;
+    
   }
   
   /* MODAL */
@@ -250,6 +249,7 @@
   
   .checkmark {
     color: var(--check-text);
+    
   }
   
   .checkmark a {
@@ -365,6 +365,7 @@
   }
   
   .btn.transparent {
+    
     margin: 0;
     background: none;
     border: 2px solid #fff;

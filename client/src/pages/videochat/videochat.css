@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.wrapper-video {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  cursor: pointer;
+  background: #ff4820;
+  border: 2px solid #7e2612;
+  padding: 0 1rem;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.icons{
+  height: 20px;
+  width: 20px;
+}
+
+.buttons-bar {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 20%;
+  height: 90vh;
+  width: 45vh;
+  border: solid #fff;
+  border-radius: 12px;
+  background-color: #031b34;
+  margin-left: 2rem;
+}
+
+.wrapper-video {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.tutor {
+  margin-top: 10%;
+  height: 70vh;
+  width: 140vh;
+  border: solid #fff;
+  border-radius: 12px;
+  background-color: blue;
+}
+
+.student {
+  height: 25vh;
+  width: 40vh;
+  border: solid #fff;
+  border-radius: 12px;
+  background-color: blue;
+}
+
+.text {
+  margin-left: 0;
+  display: flex;
+  margin-top: 150%;
+  height: 50px;
+  width: 100%;
+  border-radius: 14px;
+  
+  background-color: #fff;
+}
+
+.input-field2 {
+  width: 100%;
+  height: 100%;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 14px;
+
+}

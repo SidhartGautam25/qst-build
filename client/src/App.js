@@ -3,6 +3,9 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "../src/pages/home/Home";
 import Login from "../src/pages/login/Login";
+import Notification from "./pages/notifications/Notifications";
+import Signup from "./pages/signup/Signup";
+import Videochat from "./pages/videochat/Videochat";
 
 const App = () => {
   return (
@@ -13,6 +16,15 @@ const App = () => {
         </Route>
         <Route exact path="/login">
           <Login />
+        </Route>
+        <Route exact path="/signup">
+          <Signup />
+        </Route>
+        <Route exact path="/videochat">
+          <Videochat />
+        </Route>
+        <Route exact path="/notification">
+          <Notification />
         </Route>
       </Switch>
     </Router>
