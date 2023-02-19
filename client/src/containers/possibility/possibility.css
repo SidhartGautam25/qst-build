@@ -78,6 +78,8 @@
 .gpt3__ask-content__input_internal-btn {
   display: flex;
   flex-direction: row;
+  /* border: 1px solid #fabb46; */
+
   margin-bottom: 1rem;
 }
 .gpt3__ask-content__input_internal-btn select {

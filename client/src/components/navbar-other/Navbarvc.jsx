@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const Navbarvc = () => {
   const [color, setColor] = useState(false);
   const changeColor = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= 40) {
       setColor(true);
     } else {
       setColor(false);

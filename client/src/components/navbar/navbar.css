@@ -1,3 +1,6 @@
+.main-wrapper{
+  border: 1px solid #ffffff;
+}
 .gpt3__navbar {
   display: flex;
   justify-content: space-between;

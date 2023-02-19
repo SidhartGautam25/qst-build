@@ -1,0 +1,17 @@
+.profile_stack-spec {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* position: absolute; */
+  width: 4rem;
+  height: 2rem;
+  margin-left: -2rem;
+  margin-top: 14rem;
+  margin-left: 2rem;
+  padding: 0%;
+
+  border: 1px solid #a4a4a4;
+  border-radius: 6px;
+}

@@ -1,19 +1,19 @@
-import React from 'react'
+import React from "react";
 import {
-    Footer,
-    Blog,
-    Possibility,
-    Features,
-    WhatGPT3,
-    Header,
-  } from "../../containers";
-import { CTA, Brand, Navbar } from "../../components";
+  Footer,
+  Blog,
+  Possibility,
+  Features,
+  WhatGPT3,
+  Header,
+} from "../../containers";
 
+import { CTA, Brand, Navbar } from "../../components";
 
 function Home() {
   return (
     <div>
-        <div className="gradient__bg">
+      <div className="gradient__bg">
         <Navbar />
         <Header />
       </div>
@@ -26,7 +26,7 @@ function Home() {
       <Blog />
       <Footer />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

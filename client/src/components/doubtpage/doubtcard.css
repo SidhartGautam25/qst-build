@@ -1,0 +1,48 @@
+.card-doubt {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 620px;
+  height: 688px;
+  /* left: 75px;
+    top: 347px; */
+
+  background: #dfdfdf;
+  border-radius: 20px;
+}
+.card-img {
+  position: absolute;
+  width: 92%;
+  height: 262px;
+  /* left: 104.44px;
+  top: 395px; */
+  margin: 5%;
+
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.card-desc {
+  position: absolute;
+  width: 92%;
+  top: 45%;
+  height: 156px;
+  left: 5%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 39px;
+
+  color: #000000;
+}
+.card-desc {
+  position: absolute;
+  width: 92%;
+
+  height: 156px;
+
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 39px;
+
+  color: #000000;
+}

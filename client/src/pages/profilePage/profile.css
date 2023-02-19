@@ -1,0 +1,185 @@
+.cover_rectangle {
+  position: absolute;
+  width: 95%;
+  height: 300px;
+  left: 50px;
+  top: 96px;
+
+  background: #d7d7d7;
+  border-radius: 20px;
+}
+
+.cover_pfp {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 218px;
+  height: 218px;
+  left: 84px;
+  top: 246px;
+  border-radius: 50%;
+  background: #7c7c7c;
+  border: 4px solid #ffffff;
+}
+
+.cover_bluetick {
+  position: absolute;
+  left: 15rem;
+
+  top: 26.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.3rem;
+  width: 2.3rem;
+  border-radius: 50%;
+  background: #51abff;
+}
+
+.profile_title {
+  position: absolute;
+
+  top: 30rem;
+  left: 5rem;
+  width: 25rem;
+  height: 3rem;
+  /* top: 30%; */
+  font-family: "Poppins";
+  /* font-style: normal; */
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 60px;
+  /* identical to box height */
+
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.profile_tag {
+  position: absolute;
+  left: 16rem;
+  top: 1rem;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  /* identical to box height */
+
+  color: #2677c8;
+  /* Inside auto layout */
+}
+.profile_tag2 {
+  position: absolute;
+  left: 0;
+  top: 1rem;
+
+  font-weight: 500;
+  font-size: 20px;
+  /* line-height: 30px; */
+  /* identical to box height */
+
+  color: #a3a3a3;
+
+  /* Inside auto layout */
+}
+.profile_tag3 {
+  position: absolute;
+  left: 97rem;
+  top: 5rem;
+  width: 15rem;
+  font-weight: 500;
+  font-size: 18px;
+  /* line-height: 30px; */
+  /* identical to box height */
+
+  color: #a3a3a3;
+
+  /* Inside auto layout */
+}
+.profile_desc {
+  margin-left: 3rem;
+  position: absolute;
+  width: 40rem;
+  height: 4rem;
+  left: 2rem;
+  top: 34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* identical to box height */
+
+  color: #8e8e8e;
+}
+
+.profile_cta {
+  position: absolute;
+  width: 15rem;
+  height: 4rem;
+  margin-left: 94rem;
+  top: 1.2rem;
+}
+.profile_cta-btn {
+  position: absolute;
+  width: 15rem;
+  height: 4rem;
+
+  border-radius: 32px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  cursor: pointer;
+
+  color: #042c54;
+}
+
+.profile_cta-btn:hover {
+  color: #323232;
+  background-color: #ffffff;
+}
+.profile_stack-wrapper {
+  /* box-sizing: border-box; */
+  position: absolute;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-left: -4rem;
+  height: 25rem;
+  width: 40rem;
+}
+.session {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 42rem;
+  left: 5rem;
+}
+.session-title {
+  width: 18rem;
+  height: 3rem;
+
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 45px;
+  /* identical to box height */
+
+  color: #ffffff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+.line {
+  width: 165px;
+  height: 0px;
+  margin-bottom: 1.5rem;
+  border: 2px solid #042c54;
+}
+.recent-session{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

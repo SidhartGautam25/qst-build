@@ -38,6 +38,7 @@ const Navbar = () => {
   window.addEventListener("scroll", changeColor);
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
+    // <div className="main-wrapper">
     <div className={color ? "gpt3__navbar gpt3__navbar-bg" : "gpt3__navbar"}>
       <div className="gpt3__navbar-links">
         <div className="gpt3__navbar-links_logo">
@@ -50,7 +51,7 @@ const Navbar = () => {
         </div>
       </div>
       <div className="gpt3__navbar-sign">
-        <Link to="/login">
+        <Link to="/signup">
           <p>Sign in</p>
         </Link>
         <Link to="/login">
@@ -82,6 +83,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
+      {/* </div> */}
     </div>
   );
 };
