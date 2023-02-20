@@ -1,8 +1,25 @@
 import React from "react";
 import "./login.css";
 import { Link } from "react-router-dom";
+import { useContext, useRef } from "react";
+import { loginCall } from "../../logincall";
+import { AuthContext } from "../../context/AuthContext";
+
 
 const Login = () => {
+  
+  const email = useRef();
+  const password = useRef();
+  const { isFetching, dispatch } = useContext(AuthContext);
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    loginCall(
+      { email: email.current.value, password: password.current.value },
+      dispatch
+    );
+  };
+
   return (
     <>
       <link
@@ -13,7 +30,7 @@ const Login = () => {
       <div className="container">
         <div className="forms-container">
           <div className="signin-signup">
-            <form action="" className="sign-in-form">
+            <form onSubmit={handleClick} className="sign-in-form">
               <h2 className="title">Login</h2>
               <div className="input-field">
                 <i className="fas fa-user"></i>
@@ -33,13 +50,12 @@ const Login = () => {
                   id="id_password"
                   required="yes"
                 />
-                {/* <i className="far fa-eye" id="togglePassword" style="cursor: pointer;"></i> */}
               </div>
 
               <a className="pass" href="#">
                 Forgot your password?
               </a>
-              <input type="submit" value="Sign in" className="btn solid" />
+              <button type="submit" value="Sign in" className="btn solid">Submit</button>
               <p className="social-text">You can login with:</p>
               <div className="social-media">
                 <a

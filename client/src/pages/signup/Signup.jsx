@@ -1,7 +1,35 @@
 import React from "react";
 import "./signup.css";
 import { Link } from "react-router-dom";
+
+import axios from "axios";
+import { useRef } from "react";
+import { useHistory } from "react-router";
+
+
 const Signup = () => {
+
+  const username = useRef();
+  const email = useRef();
+  const password = useRef();
+  const history = useHistory();
+
+
+  const handleClick = async (e) => {
+    e.preventDefault();
+      const user = {
+        username: username.current.value,
+        email: email.current.value,
+        password: password.current.value,
+      };
+      try {
+        await axios.post("/auth/register", user);
+        history.push("/login");
+      } catch (err) {
+        console.log(err);
+      }
+    
+  };
   return (
     <>
       <link
@@ -12,7 +40,7 @@ const Signup = () => {
       <div className="container">
         <div className="forms-container">
           <div className="signin-signup">
-            <form action="" className="sign-up-form">
+            <form onSubmit={handleClick} className="sign-up-form">
             
               <u><h1 className="title">Sign-Up</h1></u>
               <span className="checkmark">
@@ -51,6 +79,7 @@ const Signup = () => {
                   autocomplete="username"
                   placeholder="Username"
                   required="yes"
+                  ref={username}
                 />
               </div>
               <div className="input-field">
@@ -60,7 +89,8 @@ const Signup = () => {
                   name="correo"
                   autocomplete="email"
                   placeholder="Email"
-                  required="yes"
+                  ref={email}
+                  required
                 />
               </div>
               <div className="input-field">
@@ -72,6 +102,7 @@ const Signup = () => {
                   placeholder="Password"
                   id="id_reg"
                   required="yes"
+                  ref={password}
                 />
               </div>
 
@@ -89,11 +120,11 @@ const Signup = () => {
                   I accept the <a href="#">terms and services</a>
                 </span>
               </label>
-              <input
+              <button
                 type="submit"
                 value="Create account"
                 className="btn solid"
-              />
+              >Submit</button>
               <p className="social-text">You can register with:</p>
               <div className="social-media">
                 <a
