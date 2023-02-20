@@ -1,0 +1,88 @@
+.cover_rectangle-main {
+    display: flex;
+    flex-direction: row;
+}
+.cover_rectangle3 {
+    position: absolute;
+    width: 45%;
+    height: 50vh;
+    left: 50%;
+    right: 50px;
+    top: 30vh;
+    display: flex;
+    background: #042c54;
+    border-radius: 20px;
+    flex-direction: row;
+    background: var(--color-footer);
+    border: 0px solid;
+    box-shadow: 0 6px 10px rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    background: -moz-radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgb(33, 44, 61) 25%
+    );
+  
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 25%
+    );
+  
+    /* opera 11.10+ */
+    background: -o-radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 25%
+    );
+  
+    /* ie 10+ */
+    background: -ms-radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgba(4, 12, 24, 1) 25%
+    );
+  
+    /* global 92%+ browsers support */
+    background: radial-gradient(
+      circle at 3% 25%,
+      rgba(0, 40, 83, 1) 0%,
+      rgb(21, 31, 53) 25%
+    );
+  
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .timer-heading{
+    padding: 1.5rem;
+  }
+
+  .timer-timing{
+    padding: 0;
+    font-size: 6rem;
+    font-weight: 900;
+  }
+  
+  .timer-btn{
+    display: flex;
+    flex-direction: row;
+  }
+  .timer-butt{
+    margin: 1rem;
+    border: 1px solid white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  }
+  .timer-butt:hover{
+    color: bisque;
+  }
+.bro-img{
+    margin-top: 3%;
+    margin-left: 2%;
+    height: 900px;
+    padding: 0;
+}

@@ -17,13 +17,15 @@ function Home() {
         <Navbar />
         <Header />
       </div>
-      <Brand />
-      <WhatGPT3 />
-      <Possibility />
+      <div className="gradient__bg">
+        <Brand />
+        <WhatGPT3 />
+        <Features />
+        <CTA />
+        <Blog />
 
-      <Features />
-      <CTA />
-      <Blog />
+        <Possibility />
+      </div>
       <Footer />
     </div>
   );
